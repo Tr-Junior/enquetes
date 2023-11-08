@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/indent */
 module.exports = {
-    roots: ['<rootDir>/src'],
+    // roots: ['<rootDir>/tests'],
     collectCoverageFrom: [
-        '<rootDir>/src/**/*.{ts,tsx}'
-        // '<rootDir>/src/**/*.ts',
+        '<rootDir>/src/**/*.ts',
         // '!<rootDir>/src/main/**'
     ],
     coverageDirectory: 'coverage',
@@ -12,7 +10,7 @@ module.exports = {
     // preset: '@shelf/jest-mongodb',
     transform: {
         '.+\\.ts$': 'ts-jest'
-    }
+    },
     // moduleNameMapper: {
     //     '@/tests/(.*)': '<rootDir>/tests/$1',
     //     '@/(.*)': '<rootDir>/src/$1'
