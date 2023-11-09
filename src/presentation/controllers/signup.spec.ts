@@ -97,13 +97,13 @@ describe('SignUp Controller', () => {
     const httpRequest = {
       body: {
         name: 'any_name',
-        email: 'any_email@gmail.com',
+        email: 'any_email@mail.com',
         password: 'any_password',
         password_confirmation: 'any_password_confirmation'
       }
     }
     sut.handle(httpRequest)
-    expect(isValidSpy).toHaveBeenCalledWith('any_email@gmail.com')
+    expect(isValidSpy).toHaveBeenCalledWith('any_email@mail.com')
   })
   test('should return 500 if EmailValidator throws', () => {
     class EmailValidatorStub implements EmailValidator {
@@ -116,7 +116,7 @@ describe('SignUp Controller', () => {
     const httpRequest = {
       body: {
         name: 'any_name',
-        email: 'invalid_email@gmail.com',
+        email: 'invalid_email@mail.com',
         password: 'any_password',
         password_confirmation: 'any_password_confirmation'
       }
