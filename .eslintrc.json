@@ -14,6 +14,7 @@
         "@typescript-eslint/space-before-blocks": "off",
         "@typescript-eslint/quotes": "off",
         "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/consistent-type-imports": "off",
         "import/export": "off"
     }
 }
